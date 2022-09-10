@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
     [SerializeField] bool lockCursor = true;
+    float yRotation = 180f;
 
     float cameraPitch = 0.0f;
     float velocityY = 0.0f;
