@@ -9,7 +9,8 @@ public class popup : MonoBehaviour
     
     [SerializeField]
     private GameObject clue1;
-
+    float cameraPitch = 0.0f;
+    Transform playerCamera;
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other)
     {
@@ -20,6 +21,8 @@ public class popup : MonoBehaviour
             {
                 HideCursor();
             }
+            cameraPitch = Mathf.Clamp(cameraPitch, 0.0f, 0.0f);
+            playerCamera = null;
         }
     }
 

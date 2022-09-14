@@ -20,6 +20,7 @@ public class ButtonSword : MonoBehaviour
     {
         if (answer.text.ToUpper() == actualAns.ToUpper())
         {
+          
             door.SetActive(false);
             clueImg.SetActive(false);
             
@@ -29,7 +30,6 @@ public class ButtonSword : MonoBehaviour
             Cursor.visible = false;
             Correct.Play();
             Dooropen.Play();
-
             StartCoroutine(ExecuteAfterTime());
 
 
