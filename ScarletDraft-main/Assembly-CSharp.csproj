@@ -68,6 +68,7 @@
     <Compile Include="Assets\ButtonStone.cs" />
     <Compile Include="Assets\ButtonSword.cs" />
     <Compile Include="Assets\PlayerController2.cs" />
+    <Compile Include="Assets\collectPage.cs" />
     <Compile Include="Assets\doorRemover2.cs" />
     <Compile Include="Assets\popup2.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
