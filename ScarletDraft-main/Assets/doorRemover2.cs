@@ -11,12 +11,16 @@ public class doorRemover2 : MonoBehaviour
     //public Transform target;
     //public Transform sceptor;
     //public sceptormove sceptorMove;
-    //public AudioSource Correct;
+    public AudioSource not3;
 
     public void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player") && (key1.activeSelf || key2.activeSelf || key3.activeSelf))
+        {
+            not3.Play();
+        }
 
-        if (other.CompareTag("Player") && !key1.activeSelf && !key2.activeSelf && !key3.activeSelf)
+            if (other.CompareTag("Player") && !key1.activeSelf && !key2.activeSelf && !key3.activeSelf)
         {
             Debug.Log("Open");
             //Correct.Play();
